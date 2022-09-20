@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>El nuevo atributo autocomplete y el elmento datalist de HTML5</title>
+
+    </head>
+    <body>
+        <a href = "indexPract3.html">
+            <img src = "../../imagenes/volver.jpg" width="65" height="50" alt= "vinculos">
+        </a>
+        <a href = "../../index.html">
+            <img src = "../../imagenes/inicio.png" width="65" height="50" alt= "vinculos">
+        </a>
+        <h1>Demo de autocomplete y datalist</h1>
+        <p>Este formulario demuetsra el nuevo atributo autocomplete de HTML 
+            y el elmento datalist.
+        </p>
+        <!--activar autocomplete-->
+        <form method="post"autocomplete=on>
+            <p><label>Primer nombre:
+                <input type="text"id="primerNombre"
+                placeholder="Primer nombre"/>(Primer nombre)
+            </label></p>
+            <p><label>Apellido:
+                <input type="text"id="Apellido"
+                placeholder="apellido"/>(Apellido)
+            </label></p>
+            <p><label>Email:
+                <input type="email" id="email"
+                placeholder="nombre@dominio.com"/>(nombre@dominio.com)
+            </label></p>
+            <p><label for="listaTexto">Mes de nacimiento:
+                <input type="text"id="listaTexto"
+                placeholder="Seleccione un mes"list="meses"/>
+                <datalist id="meses">
+                    <option value="Enero">
+                    <option value="Febrero">
+                    <option value="Marzo"> 
+                    <option value="Abril">
+                    <option value="Mayo">
+                    <option value="Junio">
+                    <option value="Julio">
+                    <option value="Agosto">
+                    <option value="Septiembre">
+                    <option value="Octubre">
+                    <option value="Noviembre">  
+                    <option value="Diciembre"> 
+                </datalist>
+            </label></p>
+            <p><input type="submit"value="enviar"/>
+            <input type="reset"value="borrar"/></p>
+        </form>
+    </body>
+</html>
