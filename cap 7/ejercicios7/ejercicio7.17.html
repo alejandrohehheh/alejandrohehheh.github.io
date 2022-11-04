@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Ejercicio 7.15 </title>
+        <a href = "indexej7.html">
+            <img src = "../../imagenes/volver.jpg" width="65" height="50" alt= "vinculos">
+        </a>
+        <a href = "../../index.html">
+            <img src = "../../imagenes/inicio.png" width="65" height="50" alt= "vinculos">
+        </a>
+        
+    <script>
+        var numero1;
+        var numero2;
+        var numero3;
+        var numero4;
+        var numero5;
+        var numero6;
+        var numero7;
+        var numero8;
+        var numero9;
+        var numero0;
+        var numero;
+        var mayor;
+        var mayor2;
+        var contador;
+
+        contador = 0;
+        mayor = 0;
+        mayor2 = 0;
+
+        document.writeln("<h1>El numero mayor es: </h1>")
+
+        while (contador < 10) {
+            if (contador == 0) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+
+                numero0 = parseInt(numero);
+                if (mayor < numero0) {
+                    mayor2 = mayor;
+                    mayor = numero0;
+                }
+            }
+            if (contador == 1) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+
+                numero1 = parseInt(numero);
+                if (mayor < numero1) {
+                    mayor2 = mayor;
+                    mayor = numero1;
+                }
+            }
+            if (contador == 2) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero2 = parseInt(numero);
+                if (mayor < numero2) {
+                    mayor2 = mayor;
+                    mayor = numero2;
+                }
+            }
+            if (contador == 3) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero3 = parseInt(numero);
+                if (mayor < numero3) {
+                    mayor2 = mayor;
+                    mayor = numero3;
+                }
+            }
+            if (contador == 4) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero4 = parseInt(numero);
+                if (mayor < numero4) {
+                    mayor2 = mayor;
+                    mayor = numero4;
+                }
+            }
+            if (contador == 5) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero5 = parseInt(numero);
+                if (mayor < numero5) {
+                    mayor2 = mayor;
+                    mayor = numero5;
+                }
+            }
+            if (contador == 6) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero6 = parseInt(numero);
+                if (mayor < numero6) {
+                    mayor2 = mayor;
+                    mayor = numero6;
+                }
+            }
+            if (contador == 7) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero7 = parseInt(numero);
+                if (mayor < numero7) {
+                    mayor2 = mayor;
+                    mayor = numero7;
+                }
+
+            }
+            if (contador == 8) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero8 = parseInt(numero);
+                if (mayor < numero8) {
+                    mayor2 = mayor;
+                    mayor = numero8;
+                }
+            }
+            if (contador == 9) {
+                numero = window.prompt(
+                    "Ingrese un numero de un digito: "
+                );
+                numero9 = parseInt(numero);
+                if (mayor < numero9) {
+                    mayor2 = mayor;
+                    mayor = numero9;
+                }
+            }
+
+            contador++;
+        }
+        document.writeln("<h2>" + mayor + " y " + mayor2 + "</h2>");
+
+    </script>
+</head>
+
+<body></body>
+
+</html>
