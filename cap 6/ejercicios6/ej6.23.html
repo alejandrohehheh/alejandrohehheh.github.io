@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>ejercicio6.23</title>
+    <a href = "indexEj6.html">
+        <img src = "../../imagenes/volver.jpg" width="65" height="50" alt= "vinculos">
+    </a>
+    <a href = "../../index.html">
+        <img src = "../../imagenes/inicio.png" width="65" height="50" alt= "vinculos">
+    </a>
+    
+    <script>
+        var num1,num2,num3,negativos=0,positivos=0, ceros=0;
+
+        num1=parseInt(window.prompt("Ingresa un numero."));
+        num2=parseInt(window.prompt("Ingresa un numero."));
+        num3=parseInt(window.prompt("Ingresa un numero."));
+
+        if(num1==0){
+            ceros++;
+        }
+
+        if(num1>0){
+            positivos++;
+        }
+
+        if(num1<0){
+            negativos++;
+        }
+
+        
+
+        if(num2==0){
+            ceros++;
+        }
+
+        if(num2>0){
+            positivos++;
+        }
+
+        if(num2<0){
+            negativos++;
+        }
+
+        
+
+        if(num3==0){
+            ceros++;
+        }
+
+        if(num3>0){
+            positivos++;
+        }
+
+        if(num3<0){
+            negativos++;
+        }
+
+        document.write("<h3> Hay <br>Positivos: "+positivos+"<br>Negativos: "+negativos+"<br>Ceros: "+ceros+"</h3>");
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

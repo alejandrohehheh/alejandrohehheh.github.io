@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>ejercicio6.18</title>
+    <a href = "indexEj6.html">
+        <img src = "../../imagenes/volver.jpg" width="65" height="50" alt= "vinculos">
+    </a>
+    <a href = "../../index.html">
+        <img src = "../../imagenes/inicio.png" width="65" height="50" alt= "vinculos">
+    </a>
+    <script>
+        var num1,num2,num3, sum, prom, prod, may, men;
+
+        num1=parseInt(window.prompt("Ingresa el primer numero"));
+        num2=parseInt(window.prompt("Ingresa el segundo numero"));
+        num3=parseInt(window.prompt("Ingresa el tercer numeros"));
+
+
+        sum=num1+num2+num3;
+        prod=num1*num2*num3;
+        prom=parseFloat((num1+num2+num3)/3)
+
+        if(num1<num2){
+            men=num1;
+            if(men>num3){
+                men=num3;
+            }
+        }else{
+            men=num2;
+            if(men>num3){
+                men=num3;
+            }
+        }
+
+        if(num1>num2){
+            may=num1;
+            if(x<num3){
+                may=num3;
+            }
+        }else{
+            may=num2;
+            if(num2<num3){
+                may=num3;
+            }
+        }
+
+        window.alert("Suma: "+sum+"\nPromedio: "+prom+"\nProducto: "+prod+"\nMenor: "+men+"\nMayor: "+may);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
