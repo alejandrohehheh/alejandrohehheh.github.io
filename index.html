@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-
+  <title>AlexVt-ech</title>
   <link rel="stylesheet" href="templates\styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-  <header>
-    <div class="logo">MyApp</div>
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Aquí se cargará el header -->
+  <div id="header"></div>
 
   <section class="hero">
     <h1>Welcome to MyApp</h1>
     <p>Discover the amazing features of our app</p>
     <button class="cta">Get Started</button>
   </section>
+
+  <script>
+    // Carga el contenido del header
+    fetch('templates/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
