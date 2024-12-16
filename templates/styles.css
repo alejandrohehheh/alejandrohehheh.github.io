@@ -1,87 +1,94 @@
 <style>
-    * {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+  body {
+      font-family: Arial ;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
       line-height: 1.6;
-    }
-
-    header {
-      background: #333;
+      background-color: #333;
       color: #fff;
-      padding: 1rem;
+  }
+  header {
+    background-color: #ab46a9;
+    background-image: url('../images/headerBckgnd.png');
+    background-size: 80% 290%; /* Ajusta la imagen en escala de ancho y alto */
+    background-position: left 0%;  /* 80% hacia abajo desde el borde superior */
+
+
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+  header h1 {
+      margin: 0;
+  }
+  nav {
+
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-
-    header nav ul li {
-      display: inline;
-    }
-
-    header nav ul li a {
+      justify-content: center;
+      padding: 0.5rem 0;
+  }
+  nav a {
+    
       color: #fff;
       text-decoration: none;
-    }
-
-    .hero {
-      height: 90vh;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      margin: 0 1rem;
+  }
+  nav a:hover {
+   
+      text-decoration: underline;
+  }
+  .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+      background-color: #21222c;
+  }
+  .about, .latest-posts, .projects, .contact {
+    background-color: #333;
+    color:#fff;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      
+  }
+  footer {
       text-align: center;
-    }
+      padding: 1rem 0;
+      background: #333;
+      color: #fff;
+  }
+  footer p {
+      margin: 0;
+  }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+  /* Estilo de los enlaces no visitados */
+a {
+  color: #3498db; /* Cambia el color a azul (puedes poner el color que prefieras) */
+  text-decoration: none; /* Elimina el subrayado */
+}
 
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
+/* Estilo de los enlaces visitados */
+a:visited {
+  color: #9b59b6; /* Color para enlaces ya visitados */
+}
 
-    .hero .cta {
-      padding: 0.8rem 1.5rem;
-      background: #fff;
-      color: #333;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-      text-transform: uppercase;
-    }
+/* Estilo de los enlaces cuando el ratón pasa sobre ellos */
+a:hover {
+  color: #e74c3c; /* Cambia a rojo cuando el ratón pasa sobre el enlace */
+  text-decoration: underline; /* Agrega subrayado al pasar el ratón */
+}
 
-    .hero .cta:hover {
-      background: #ddd;
-    }
+/* Estilo de los enlaces cuando se hace clic */
+a:active {
+  color: #f39c12; /* Color cuando el enlace está activo (se hace clic) */
+}
 
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+</style>

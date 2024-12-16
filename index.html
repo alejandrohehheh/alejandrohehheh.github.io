@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlexVt-ech</title>
-  <link rel="stylesheet" href="templates\styles.css"> <!-- Link to external CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AleVt-ech</title>
+    
+    <link rel="stylesheet" href="templates\styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-  <!-- Aquí se cargará el header -->
-  <div id="header"></div>
-
-  <section class="hero">
-    <h1>Welcome to MyApp</h1>
-    <p>Discover the amazing features of our app</p>
-    <button class="cta">Get Started</button>
-  </section>
-
+   <div id="header"></div>
+   <div id="bienvenida"></div>
+  
   <script>
     // Carga el contenido del header
-    fetch('templates/header.html')
+    fetch('templates/html/header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header').innerHTML = data;
+      });
+
+      fetch('templates/html/bienvenida.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('bienvenida').innerHTML = data;
       });
   </script>
 </body>
