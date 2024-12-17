@@ -30,19 +30,18 @@
       margin: 0;
   }
   nav {
-
+    color: #fff;
       display: flex;
       justify-content: center;
       padding: 0.5rem 0;
   }
   nav a {
-    
       color: #fff;
-      text-decoration: none;
+      text-decoration: underline;
       margin: 0 1rem;
   }
   nav a:hover {
-    color: #fff;
+    color: #3498db;
       text-decoration: underline;
   }
   .container {
@@ -56,7 +55,9 @@
     color:#fff;
       margin: 1rem 0;
       padding: 1rem;
-      border-radius: 8px;
+      border-radius: 8px;   
+  }
+  .linkProjects {
       
   }
   footer {
@@ -69,26 +70,24 @@
       margin: 0;
   }
 
-  /* Estilo de los enlaces no visitados */
-a {
-  color: #3498db; /* Cambia el color a azul (puedes poner el color que prefieras) */
-  text-decoration: none; /* Elimina el subrayado */
-}
+  a {
+    color: #3498db;
+      
+  }
 
-/* Estilo de los enlaces visitados */
-a:visited {
-  color: #9b59b6; /* Color para enlaces ya visitados */
-}
+  a:hover {
+    color: #f935ff;
+      
+  }
+  a:visited {
+    color: #f935ff;
+      
+  }
 
-/* Estilo de los enlaces cuando el ratón pasa sobre ellos */
-a:hover {
-  color: #e74c3c; /* Cambia a rojo cuando el ratón pasa sobre el enlace */
-  text-decoration: underline; /* Agrega subrayado al pasar el ratón */
-}
+  a:active {
+    color: #f935ff;
+      
+  }
 
-/* Estilo de los enlaces cuando se hace clic */
-a:active {
-  color: #f39c12; /* Color cuando el enlace está activo (se hace clic) */
-}
 
 </style>

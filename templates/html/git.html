@@ -3,26 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AleVt-ech</title>
+    <title>AleVt-ech/Git</title>
 
     <link rel="stylesheet" href="templates\styles.css" /> <!-- Link to external CSS file -->
   </head>
   <body>
     <div id="header"></div>
-    <div id="bienvenida"></div>
+    <h1>hiola</h1>
 
     <script>
       // Carga el contenido del header
-      fetch('templates/html/header.html')
+      fetch('header.html')
         .then((response) => response.text())
         .then((data) => {
           document.getElementById('header').innerHTML = data
-        })
-      
-      fetch('templates/html/bienvenida.html')
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById('bienvenida').innerHTML = data
         })
     </script>
   </body>
