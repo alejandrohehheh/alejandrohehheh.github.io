@@ -51,6 +51,10 @@
       </section>
     </main>
 
+    <h2>Comandos mas importantes para Git:</h2>
+
+    <div id="comandosGit"></div>
+
     <!-- Script para cargar el header -->
     <script>
       // Carga el contenido del header con manejo de errores
@@ -63,6 +67,18 @@
         })
         .then((data) => {
           document.getElementById('header').innerHTML = data;
+        })
+        .catch((error) => console.error("Fetch error:", error));
+
+        fetch('comandosGit.html')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Error al cargar el header");
+          }
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById('comandosGit').innerHTML = data;
         })
         .catch((error) => console.error("Fetch error:", error));
     </script>
