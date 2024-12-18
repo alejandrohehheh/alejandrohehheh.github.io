@@ -4,20 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AleVt-ech/Git</title>
-
-    <link rel="stylesheet" href="templates\styles.css" /> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../styles.css" /> <!-- Link to external CSS file -->
   </head>
   <body>
+    <!-- Contenedor del header -->
     <div id="header"></div>
-    <h1>hiola</h1>
 
+    <!-- Contenido Principal -->
+    <main>
+      <h1>¿Qué es Git?</h1>
+      <section class="seccion-introduccion">
+        <p>
+          Git es un sistema de control de versiones distribuido que permite gestionar el desarrollo de software.
+          Este sistema facilita ver los cambios, actualizaciones y versiones del código fuente.
+        </p>
+      </section>
+
+      <h2>¿Por qué necesitas un control de versiones para tu código?</h2>
+      
+      <section class="seccion-info">
+        <p>
+          <strong>Gestión:</strong> El control de versiones, como Git, es una herramienta que permite gestionar las versiones de tu proyecto sin necesidad de crear manualmente varias carpetas o directorios con nombres como "versión 1", "Versión 2", "Versión final" o "Versión final-final".
+          Gracias a Git, todo se guarda en un único directorio, y diferenciar las versiones es tan fácil como etiquetar los cambios con un "commit" en cada actualización que realices.
+        </p>
+      </section>
+
+      <section class="seccion-info">
+        <p>
+          <strong>Recuperación:</strong> Recuperar versiones anteriores del código es una de las mayores ventajas de usar un sistema de control de versiones.
+          ¿Cometiste un error que generó un bug en todo el código y ahora necesitas volver a una versión anterior? Usar "Ctrl+Z" en un proyecto grande sería impráctico. No te preocupes, con Git puedes volver a una versión anterior con solo unos pocos comandos.
+        </p>
+      </section>
+
+      <section class="seccion-info">
+        <p>
+          <strong>Trabajo en equipo:</strong> En el desarrollo de software, el trabajo en equipo es fundamental.
+          Tener un sistema que permita a varias personas trabajar en el mismo código simultáneamente es un gran apoyo. Con Git, los cambios realizados por los desarrolladores se reflejan casi en tiempo real. Además, cada desarrollador puede ver, comparar y modificar los cambios realizados, guardar su progreso y consultar el código en cualquier momento del día.
+        </p>
+      </section>
+
+      <section class="seccion-info">
+        <p>
+          <strong>Almacenamiento en la nube:</strong> Git, al integrarse con servicios en la "nube" como GitHub, permite acceder y consultar el código desde cualquier equipo, sin necesidad de descargar todo el proyecto en tu computadora.
+          Esto significa que puedes añadir, eliminar o corregir código desde cualquier lugar con conexión a internet. Incluso puedes realizar cambios desde tu celular o computadora, sin ocupar espacio de almacenamiento local en tu dispositivo.
+        </p>
+      </section>
+    </main>
+
+    <!-- Script para cargar el header -->
     <script>
-      // Carga el contenido del header
+      // Carga el contenido del header con manejo de errores
       fetch('header.html')
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById('header').innerHTML = data
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Error al cargar el header");
+          }
+          return response.text();
         })
+        .then((data) => {
+          document.getElementById('header').innerHTML = data;
+        })
+        .catch((error) => console.error("Fetch error:", error));
     </script>
   </body>
 </html>
