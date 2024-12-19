@@ -130,7 +130,7 @@ footer p {
     /* Tamaño máximo */
   max-width: 600px; /* Ancho máximo */
   margin: 0 auto;   /* Centrado horizontal */
-  max-height: 200px; /* Altura máxima */
+  max-height: 700px; /* Altura máxima */
 
   /* Manejo del contenido */
   overflow-x: auto; /* Desplazamiento horizontal si el contenido es muy ancho */
